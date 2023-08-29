@@ -5,10 +5,10 @@ export default function OnBuilding() {
     return (
         <div className="container min-h-screen p-6 mx-auto lg:flex lg:items-center">
             <div className="flex flex-col items-center w-full lg:w-1/2">
-                <h1 className="text-purple-500 font-semibold text-4xl p-5">
+                <h1 className="text-purple-500 font-semibold text-4xl p-5 text-center">
                 Proxímamente grandes novedades
                 </h1>
-                <p className="text-gray-600 font-normal text-lg">
+                <p className="text-gray-600 font-normal text-lg text-center">
                 Estamos construyendo algo nuevo para ti, sé el primero en enterarte.
                 </p>
 
