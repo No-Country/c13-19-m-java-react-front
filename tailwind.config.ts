@@ -16,6 +16,5 @@ const config: Config = {
       },
     },
   },
-  plugins: [daisyUIPlugin],
 };
 export default config;
