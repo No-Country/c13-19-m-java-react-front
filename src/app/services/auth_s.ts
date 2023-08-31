@@ -1,25 +1,11 @@
 import axiosInstance from "../utils/axiosInterface";
+import {LoginCredentialsProps, LoginResponseProps} from '../interfaces/auth.interface'
 
-export interface UserProps {
-    name : string,
-    last_name: string
-}
-
-export interface LoginResponse {
-    user: UserProps,
-    token: string
-}
-
-export interface LoginCredentials {
-    email: string,
-    password: string
-}
-
-export async function login (credentials: LoginCredentials): Promise<LoginResponse> {
+export async function login (credentials: LoginCredentialsProps) {
     try {
         const response = await axiosInstance.post('/alumno/login', credentials)
-        return response.data
+        return response
     } catch (error: any) {
-        throw error.response.data
+        throw new Error ('inicio de secion fallido')
     }
 }

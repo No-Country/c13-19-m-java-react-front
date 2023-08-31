@@ -96,6 +96,7 @@ const InputContainer: React.FC<InputContainerProps> = ({
           // ... otras propiedades de entrada
           className="p-2 border rounded-md"
           style={style}
+          onChange={onChange}
         />
       ) : type === "checkbox" ? (
         <label className="flex items-center">
