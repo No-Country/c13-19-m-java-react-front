@@ -1,8 +1,19 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Sansita } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const sansita = Sansita({
+  subsets: ["latin"],
+  variable: "--font-sansita",
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>{children}</body>
+      <body className={`${sansita.variable} ${inter.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }

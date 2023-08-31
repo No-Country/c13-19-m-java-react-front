@@ -14,6 +14,22 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        sansita: "var(--font-sansita)",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": {
+            transform: "translateY(-50%)",
+        },
+        "100%": {
+            transform: "translateY(0)",
+          },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 0.8s ease-in-out",
+      },
     },
   },
   plugins: [daisyUIPlugin],
