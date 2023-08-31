@@ -38,13 +38,13 @@ interface InputContainerProps {
   checked?: boolean;
   onClear?: () => void;
   buttonType?:
-    | "link"
-    | "text"
-    | "ghost"
-    | "dashed"
-    | "default"
-    | "primary"
-    | undefined;
+  | "link"
+  | "text"
+  | "ghost"
+  | "dashed"
+  | "default"
+  | "primary"
+  | undefined;
   danger?: boolean;
   ghost?: boolean;
   shape?: "circle" | "round" | "default";
@@ -87,14 +87,15 @@ const InputContainer: React.FC<InputContainerProps> = ({
     <div>
       {/* Renderizar diferentes tipos de componentes según el tipo */}
       {type === "text" ||
-      type === "number" ||
-      type === "email" ||
-      type === "password" ? (
+        type === "number" ||
+        type === "email" ||
+        type === "password" ? (
         <input
           type={type}
           placeholder={placeholder}
           // ... otras propiedades de entrada
           className="p-2 border rounded-md"
+          style={style}
         />
       ) : type === "checkbox" ? (
         <label className="flex items-center">
@@ -105,9 +106,8 @@ const InputContainer: React.FC<InputContainerProps> = ({
         <button
           type={type === "submitButton" ? "submit" : "button"}
           // ... otras propiedades del botón
-          className={`${
-            danger ? "bg-red-500" : "bg-blue-500"
-          } text-white font-bold py-2 px-4 rounded`}
+          className={`${danger ? "bg-red-500" : "bg-blue-500"
+            } text-white font-bold py-2 px-4 rounded`}
         >
           {placeholder}
         </button>
