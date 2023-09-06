@@ -3,10 +3,13 @@ import React from "react";
 interface CardContainerProps {
   title: string;
   subtitle: string;
+  direction: "horizontal" | "vertical";
+  text?: string;
+  button: React.ReactElement;
   textList?: string[];
   iconOrImg?: React.ReactElement;
-  direction: "horizontal" | "vertical";
   textListDecoration?: "numbers" | "squares" | "circles";
+  reactElement?: React.ReactElement;
 }
 
 const CardContainer: React.FC<CardContainerProps> = ({
