@@ -1,0 +1,124 @@
+{
+  "preguntas": [
+    {
+      "id": 1,
+      "texto": "¿Qué tipo de examen realizas con mayor facilidad?",
+      "options": {
+        "a": {
+          "text": "A) Examen escrito"
+        },
+        "b": {
+          "text": "B) Examen oral"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "texto": "Cuando tienes que aprender algo de memoria:",
+      "options": {
+        "a": {
+          "text": "A) Memorizo lo que veo y recuerdo la imagen."
+        },
+        "b": {
+          "text": "B) Memorizo mejor si repito lo estudiado multiples veces y recuerdo el paso a paso."
+        }
+      }
+    },
+    {
+      "id": 3,
+      "texto": "En una clase, ¿que te resulta más fácil/efectivo para entender la explicación del profesor?",
+      "options": {
+        "a": {
+          "text": "A) Escuchar a el profesor."
+        },
+        "b": {
+          "text": "B) Leer el pizarrón o libro."
+        }
+      }
+    },
+    {
+      "id": 4,
+      "texto": "Marca la frase con las que te identifiques más:",
+      "options": {
+        "a": {
+          "text": "A) Prefiero escuchar chistes que leer cómics."
+        },
+        "b": {
+          "text": "B) Mis cuadernos están ordenados y bien presentados, me molestan los tachones."
+        }
+      }
+    },
+    {
+      "id": 5,
+      "texto": "¿Cuál de las siguientes actividades disfrutas más?",
+      "options": {
+        "a": {
+          "text": "A) Ver películas."
+        },
+        "b": {
+          "text": "B) Escuchar música."
+        }
+      }
+    },
+    {
+      "id": 6,
+      "texto": "¿De qué manera te resulta más fácil aprender algo?",
+      "options": {
+        "a": {
+          "text": "A) Repitiendo en voz alta."
+        },
+        "b": {
+          "text": "B) Escribiéndolo varias veces."
+        }
+      }
+    },
+    {
+      "id": 7,
+      "texto": "Cuando no encuentras las llaves en un bolso, ¿qué haces para encontrarlas más rápido?",
+      "options": {
+        "a": {
+          "text": "A) Sacudo la bolsa para oír el ruido."
+        },
+        "b": {
+          "text": "B) Las busco mirando."
+        }
+      }
+    },
+    {
+      "id": 8,
+      "texto": "Cuando te dan instrucciones:",
+      "options": {
+        "a": {
+          "text": "A) Recuerdo con facilidad las palabras exactas de lo que me han dicho."
+        },
+        "b": {
+          "text": "B) Me cuesta recordar las instrucciones orales, pero no tengo problema con las escritas."
+        }
+      }
+    },
+    {
+      "id": 9,
+      "texto": "Si te ofrecieran uno de los siguientes empleos, ¿cuál elegirías?",
+      "options": {
+        "a": {
+          "text": "A) Locutor de una emisora de radio."
+        },
+        "b": {
+          "text": "B) Editor de una revista."
+        }
+      }
+    },
+    {
+      "id": 10,
+      "texto": "¿A qué tipo de evento preferirías asistir?",
+      "options": {
+        "a": {
+          "text": "A) Un concierto de música."
+        },
+        "b": {
+          "text": "B) Un espectáculo de magia."
+        }
+      }
+    }
+  ]
+}
