@@ -51,7 +51,7 @@ const Registro: React.FC = () => {
       } else {
         // Error en el registro
         setError("Error en el registro");
-        console.error("Error en el registro:", response.statusText);
+        console.error("Error en el registro:", response);
       }
     } catch (error) {
       setError("Error en el registro");
