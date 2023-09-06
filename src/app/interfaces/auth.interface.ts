@@ -8,6 +8,6 @@ export interface LoginResponseProps {
 }
 
 export interface LoginCredentialsProps {
-    email: string,
+    mail: string,
     password: string
 }

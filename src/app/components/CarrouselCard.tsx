@@ -15,7 +15,7 @@ export default function CarrouselCard({ source, tittle, children, itemNum }) {
         }
     }
 
-    const goTo = `#item${itemNum+1}`
+    const goTo = `#item${itemNum + 1}`
 
     return (
         <div id={numItem} className="carousel-item w-full flex justify-center gap-20 max-lg:flex-col items-center my-10">
@@ -24,7 +24,7 @@ export default function CarrouselCard({ source, tittle, children, itemNum }) {
                 src={source}
                 width={800}
                 height={400}
-                className="w-[1000px] h-auto max-2xl:w-[500px] max-sm:w-[300px] h-auto"
+                className="w-[1000px]  max-2xl:w-[500px] max-sm:w-[300px] h-auto"
             />
             <div className="flex flex-col align-center justify-center">
                 <div className="w-96 flex flex-col max-sm:w-80">

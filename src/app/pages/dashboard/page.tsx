@@ -1,6 +1,9 @@
+
 const Dashboard = () => {
     return (
-        <h1>HELLO FROM DASHBOARD</h1>
+        <div>
+            <h2>Dasbboar</h2>
+        </div>
     )
 }
 
