@@ -22,7 +22,7 @@ export default function OnBuilding() {
 
           <button
             className="text-1xl tracking-wider font-medium px-5 py-2 text-white bg-purple-500 hover:bg-purple-600 rounded"
-            //*completar con backend//
+          //*completar con backend//
           >
             Notificarme
           </button>

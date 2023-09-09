@@ -1,23 +1,24 @@
-import { login, LoginCredentials, LoginResponse } from "../services/auth_s";
+import { login } from "../services/auth_s";
 import { useState } from "react";
-import { useRouter } from "next/navigation"
+import {LoginCredentialsProps, LoginResponseProps} from "../interfaces/auth.interface"
+import { useRouter } from "next/navigation";
 
 
 export function useAuth () {
 
     const router = useRouter()
 
-    const [user, setUser] = useState< LoginResponse['user'] | null >(null)
-    const [token, setToken] = useState< string | null >(null)
+    const [user, setUser] = useState< '' | null >()
+    const [token, setToken] = useState< string | null >()
 
-    const handleLogin =  async (credentials: LoginCredentials) => {
+    const handleLogin =  async (credentials: LoginCredentialsProps) => {
         try {
             const response = await login(credentials)
-            setUser(response.user)
-            setToken(response.token)
-            router.push('/dashboard')
+            if(response.status) {
+                router.push('/pages/carrousel')
+            }
         } catch (error) {
-            console.log('ocurrio un herror: ',error)
+            console.log(error)
         }
     }
 
