@@ -8,6 +8,7 @@ import { useAuth } from "@/app/hooks/useAuth";
 import InputContainer from "@/app/components/InputContainer";
 import IconGoogle from "@/app/constants/iconGoogle";
 import IconApple from "@/app/constants/IconApple";
+import Link from "next/link";
 
 const Login: React.FC = () => {
   const { login } = useAuth();
@@ -66,6 +67,11 @@ const Login: React.FC = () => {
           <button className="w-[364px] h-[53px] rounded-2xl bg-[#5316B6] text-white">
             Iniciar seción
           </button>
+          <Link href="/pages/register" passHref>
+            <div className="w-[364px] h-[53px] rounded-2xl bg-[#5316B6] text-white flex justify-center items-center">
+              Registrarse
+            </div>
+          </Link>
         </form>
         <button className="w-[364px] h-[53px] rounded-2xl bg-[#5316B6] flex justify-center items-center gap-3 text-white">
           <IconGoogle /> Continuar con Google

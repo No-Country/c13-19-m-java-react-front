@@ -1,6 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useRouter } from "next/navigation"; // Importa el router de Next.js
+import Modal from "@/app/components/ModalContainer";
 
 const Registro: React.FC = () => {
   const [nombreCompleto, setNombreCompleto] = useState("");
@@ -12,6 +14,17 @@ const Registro: React.FC = () => {
   const [pais, setPais] = useState("");
   const [estado, setEstado] = useState("");
   const [error, setError] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const router = useRouter(); // Obtén el router de Next.js
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -48,6 +61,12 @@ const Registro: React.FC = () => {
       if (response.status === 200) {
         // Registro exitoso
         console.log("Registro exitoso");
+        openModal(); // Abre el modal cuando el registro es exitoso
+        setTimeout(() => {
+          // Programa la redirección después de 2 segundos
+          router.push("/pages/login");
+          // Reemplaza "/otra-ruta" con la ruta a la que deseas redirigir
+        }, 3000); // 2000 milisegundos = 2 segundos
       } else {
         // Error en el registro
         setError("Error en el registro");
@@ -184,6 +203,9 @@ const Registro: React.FC = () => {
           >
             Registrarse
           </button>
+          <Modal isOpen={isModalOpen} onClose={closeModal} title="Mi Modal">
+            <p>Este es el contenido del modal.</p>
+          </Modal>
         </form>
       </div>
     </div>
