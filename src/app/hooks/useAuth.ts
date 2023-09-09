@@ -17,8 +17,8 @@ export function useAuth () {
             if(response.status) {
                 router.push('/pages/carrousel')
             }
-        } catch (error: any) {
-            console.log('ocurrio un herror: ', error)
+        } catch (error) {
+            console.log(error)
         }
     }
 
