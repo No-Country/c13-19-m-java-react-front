@@ -3,7 +3,9 @@
 import React from "react";
 
 interface CardCtainerProgress {
-    title: string;
+    topTittle?: string;
+    title?: string;
+    width: number;
     subtitle?: string;
     direction: "horizontal" | "vertical";
     text?: string;
@@ -15,6 +17,8 @@ interface CardCtainerProgress {
 }
 
 const CardCtainerProgress: React.FC<CardCtainerProgress> = ({
+    topTittle,
+    width,
     title,
     subtitle,
     textList,
@@ -25,8 +29,11 @@ const CardCtainerProgress: React.FC<CardCtainerProgress> = ({
     textListDecoration = "numbers",
     reactElement
 }) => {
+
+    const widthBig = "w-[360px] max-sm:gap-1 max-md:gap-2 md:w-[480px] lg:w-[540px]"
+    const widthSmall = "w-[170px] max-sm:hidden max-sm:gap-1 max-md:gap-2 md:w-[180px] lg:w-[190px]"
     const containerClasses =
-        "flex items-center gap-5 p-4 border rounded-xl shadow bg-white w-[150px] md:w-[320px] lg:w-[540px] border-none bg-[#B993FF]"; // Cambia el ancho a 150px en pantallas pequeñas
+        `flex ${(direction === "vertical")? "flex-col" : "flex-row" } items-center justify-center gap-5 p-2 border rounded-xl shadow w-[360px] ${(width >= 350)? widthBig : widthSmall } border-none bg-[#B993FF]`; // Cambia el ancho a 150px en pantallas pequeñas
     const titleClasses = "mb-2 font-bold text-xl";
     const subtitleClasses = "mb-2 text-[#000000] text-sm";
     const textClasses = "mb-2 text-[#FFFFFF] text-sm";
@@ -36,6 +43,7 @@ const CardCtainerProgress: React.FC<CardCtainerProgress> = ({
 
     return (
         <div className={containerClasses}>
+            {topTittle && <h3 className={titleClasses}>{topTittle}</h3>}
             {reactElement && (reactElement)}
             <div>
                 {title && <h3 className={titleClasses}>{title}</h3>}
