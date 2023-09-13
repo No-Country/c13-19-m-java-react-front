@@ -9,6 +9,7 @@ import LearnWithMe from "@/app/icons/LearnWithMe";
 import Visibility from "@/app/icons/Visibility";
 import ProfileLoginIcon from "@/app/icons/ProfileLoginIcon";
 import Link from "next/link";
+import { Bar } from "react-chartjs-2";
 
 const Login = () => {
   const { login } = useAuth();

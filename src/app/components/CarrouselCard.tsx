@@ -2,10 +2,15 @@ import Image from "next/image";
 import "tailwindcss/tailwind.css";
 import "daisyui/dist/full.css";
 
-export default function CarrouselCard({ source, tittle, children, itemNum }) {
+export default function CarrouselCard({
+  source,
+  tittle,
+  children,
+  itemNum,
+}: any) {
   const numItem = `item${itemNum}`;
 
-  const styles = (num) => {
+  const styles = (num: any) => {
     if (itemNum === num) {
       return "btn-circle btn-xs opacity-40 bg-slate-800";
     } else {
