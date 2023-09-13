@@ -39,7 +39,7 @@ function Rating({
     <select
       value={value}
       onChange={handleRate}
-      className="bg-slate-500 text-slate-50 text-lg font-normal border rounded-sm p-4"
+      className="bg-slate-500 text-slate-50 text-lg font-normal border rounded-sm p-2"
     >
       <option value="0">Elegí una opción</option>
       <option value="1">A</option>
@@ -81,40 +81,29 @@ export default function Quiz() {
 
   if (!currentQuestion) {
     return (
-      <>
-        <div className="w-fit font-normal text-xl rounded-md bg-slate-300 shadow-xl p-8 gap-3 mt-10 m-auto">
+      <section className="min-h-screen bg-violet-700 p-10">
+        <div className="w-fit font-normal text-xl text-zinc-900 rounded-2xl bg-violet-400 shadow-xl p-8 gap-3 mx-auto">
           <div>
             <Results totalPoints={totalPoints} isMajorityA={isMajorityA} />
           </div>
-          {/* <ul className="text-zinc-800 grid grid-cols-1 p-2 gap-3">
-            {answers.map((answer) => (
-              <li className="p-1" key={answer.id}>
-                {answer.id}. {answer.texto} 👉 {answer.points}
-              </li>
-            ))}
-          </ul> */}
-
-          <div className="flex justify-center gap-4 p-4">
-            <Link
-              href="/"
-              className="bg-purple-500 text-slate-50 border border-slate-800 rounded-md px-3 py-1 hover:scale-105"
-            >
-              Ir al dashboard
-            </Link>
-            {/* La idea es que esta ruta te lleve al dashbord */}
-          </div>
         </div>
-      </>
+        <div className="flex flex-row justify-center align-middle mt-6 p-4">
+          <Link
+            href="/"
+            className="bg-violet-800 text-slate-50 text-center text-lg border border-slate-600 rounded-md w-[300px] h-[50px] p-3 hover:scale-105"
+          >
+            Comenzar
+          </Link>
+          {/* La idea es que esta ruta te lleve al dashbord */}
+        </div>
+      </section>
     );
   }
 
   return (
-    <div
-      className="container flex flex-col items-center justify-center text-zinc-800"
-      style={{ height: "calc(100vh - 1rem)" }}
-    >
-      <div className="flex flex-col justify-around p-7 rounded-lg shadow-lg shadow-slate-300 w-[600px] h-[480px]">
-        <h1 className="font-bold text-3xl text-center">
+    <div className="min-h-screen flex flex-col items-center justify-center text-zinc-800 bg-violet-700">
+      <div className="mx-auto flex flex-col justify-around gap-4 p-6 md:p-11 rounded-lg shadow-lg shadow-slate-600 w-full sm:w-[400px] md:w-[600px] md:h-[500px] bg-slate-50">
+        <h1 className="font-bold text-2xl md:text-3xl text-center">
           {" "}
           Test de aprendizaje 🤯
         </h1>
