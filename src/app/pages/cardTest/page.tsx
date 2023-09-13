@@ -4,6 +4,8 @@ import "tailwindcss/tailwind.css";
 import "daisyui/dist/full.css";
 import CardCtainerProgress from "@/app/components/CardCtainerProgress";
 import Radial from "@/app/components/Radial";
+import CardWelcome from "@/app/components/CardWelcome";
+import CardPorcentaje from "@/app/components/CardPorcentaje";
 
 export default function CardTest() {
 
@@ -40,12 +42,8 @@ export default function CardTest() {
                 text="Tu proxima clase Jueves 12 de Marzo"
                 width={400}></CardCtainerProgress>
                 
-                <CardCtainerProgress 
-                topTittle={"Tu progreso"} 
-                direction={"vertical"} 
-                width={100}
-
-                reactElement={porcentaje}/>
+                <CardPorcentaje porcentaje={80}></CardPorcentaje>
+                <CardWelcome fullName={"Eitan Sanarbia"} cursoCercaDeTerminar={"asdas"} proximaClase={"asdasd"} porcentaje={0}></CardWelcome>
         </div>
                 
 
