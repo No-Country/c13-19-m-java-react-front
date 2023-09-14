@@ -2,7 +2,7 @@ import Image from "next/image";
 import "tailwindcss/tailwind.css";
 import "daisyui/dist/full.css";
 
-export default function CarrouselCard({ source, tittle, children, itemNum }) {
+export default function CarrouselCard({ source, tittle, children, itemNum }: any) {
   const numItem = `item${itemNum}`;
 
   const styles = (num) => {
