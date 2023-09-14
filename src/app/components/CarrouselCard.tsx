@@ -5,7 +5,7 @@ import "daisyui/dist/full.css";
 export default function CarrouselCard({ source, tittle, children, itemNum }: any) {
   const numItem = `item${itemNum}`;
 
-  const styles = (num) => {
+  const styles = (num: number) => {
     if (itemNum === num) {
       return "btn-circle btn-xs opacity-40 bg-slate-800";
     } else {
