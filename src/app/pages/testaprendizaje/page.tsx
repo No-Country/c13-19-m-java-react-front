@@ -89,7 +89,7 @@ export default function Quiz() {
         </div>
         <div className="flex flex-row justify-center align-middle mt-6 p-4">
           <Link
-            href="/"
+            href="/pages/dashboard/sections/courses"
             className="bg-violet-800 text-slate-50 text-center text-lg border border-slate-600 rounded-md w-[300px] h-[50px] p-3 hover:scale-105"
           >
             Comenzar

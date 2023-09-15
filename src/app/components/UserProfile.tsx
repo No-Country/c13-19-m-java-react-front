@@ -7,7 +7,7 @@ const UserProfile = ({ }) => {
             <div className="w-10 h-10 rounded-full p-3 bg-red-600" />
             <div>
                 <h2>Rafael Díaz</h2>
-                <span>Profesor</span>
+                <span>Alumno</span>
             </div>
         </div>
     )
