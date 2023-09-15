@@ -2,6 +2,7 @@ import Image from "next/image";
 import "tailwindcss/tailwind.css";
 import "daisyui/dist/full.css";
 import Link from "next/link";
+
 interface CarrouselCard {
   source: string;
   tittle: string;
