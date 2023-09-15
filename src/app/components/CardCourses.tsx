@@ -19,7 +19,7 @@ const CardCourses: React.FC<CardCoursesProps> = ({
         <h2 className="text-xl font-semibold mb-2">{title}</h2>
         <p className="text-gray-600 text-sm mb-4">{subtitle}</p>
         <div className="flex items-center">
-          <span className="bg-yellow-400 text-white py-1 px-2 rounded-full text-xs">
+          <span className="bg-[#5316B6] text-white py-1 px-2 rounded-full text-xs">
             Descuento
           </span>
         </div>

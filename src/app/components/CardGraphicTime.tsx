@@ -17,7 +17,7 @@ const CardGraphicTime = () => {
     datasets: [
       {
         label: "Tareas Realizadas",
-        backgroundColor: "rgba(75,192,192,0.6)",
+        backgroundColor: "#5316B6",
         borderColor: "rgba(75,192,192,1)",
         borderWidth: 1,
         hoverBackgroundColor: "rgba(75,192,192,0.8)",
@@ -28,7 +28,7 @@ const CardGraphicTime = () => {
   };
 
   return (
-    <div className="card" style={{ width: "600px", height: "400px" }}>
+    <div className="card bg-gray-200" style={{ width: "100%", height: "100%" }}>
       <div className="card-header">
         <h3>Gráfico de Tareas Realizadas por Día</h3>
       </div>

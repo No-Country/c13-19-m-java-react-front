@@ -2,28 +2,7 @@ import Image from "next/image";
 import "tailwindcss/tailwind.css";
 import "daisyui/dist/full.css";
 
-<<<<<<< Updated upstream
-interface CarrouselCard {
-  source: string;
-  tittle: string;
-  children: string;
-  itemNum: number;
-}
-
-const CarrouselCard: React.FC<CarrouselCard> = ({
-  source,
-  tittle,
-  children,
-  itemNum
-}) => {
-=======
-export default function CarrouselCard({
-  source,
-  tittle,
-  children,
-  itemNum,
-}: any: any) {
->>>>>>> Stashed changes
+function CarrouselCard({ source, tittle, children, itemNum }: any) {
   const numItem = `item${itemNum}`;
 
   const styles = (num: number) => {
