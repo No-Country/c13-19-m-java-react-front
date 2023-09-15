@@ -22,6 +22,9 @@ const Login = () => {
     if (response === undefined) {
       setError("error de credenciales");
     }
+    else {
+      console.log('credenciales correctas')
+    }
   };
   const formik = useFormik({
     initialValues: {

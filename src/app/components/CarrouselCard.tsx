@@ -2,15 +2,31 @@ import Image from "next/image";
 import "tailwindcss/tailwind.css";
 import "daisyui/dist/full.css";
 
+<<<<<<< Updated upstream
+interface CarrouselCard {
+  source: string;
+  tittle: string;
+  children: string;
+  itemNum: number;
+}
+
+const CarrouselCard: React.FC<CarrouselCard> = ({
+  source,
+  tittle,
+  children,
+  itemNum
+}) => {
+=======
 export default function CarrouselCard({
   source,
   tittle,
   children,
   itemNum,
-}: any) {
+}: any: any) {
+>>>>>>> Stashed changes
   const numItem = `item${itemNum}`;
 
-  const styles = (num: any) => {
+  const styles = (num: number) => {
     if (itemNum === num) {
       return "btn-circle btn-xs opacity-40 bg-slate-800";
     } else {
@@ -23,14 +39,14 @@ export default function CarrouselCard({
   return (
     <div
       id={numItem}
-      className="carousel-item w-full flex justify-center gap-20 max-lg:flex-col items-center my-10"
+      className="carousel-item w-full flex justify-center gap-32 max-lg:flex-col items-center my-10 max-2xl:gap-8 "
     >
       <Image
         alt="coming-soon"
         src={source}
         width={800}
         height={400}
-        className="w-[1000px] max-2xl:w-[500px] max-sm:w-[300px] h-auto"
+        className="w-[1000px] max-2xl:w-[400px] max-sm:w-[200px]"
       />
       <div className="flex flex-col align-center justify-center">
         <div className="w-96 flex flex-col max-sm:w-80">
@@ -60,3 +76,5 @@ export default function CarrouselCard({
     </div>
   );
 }
+
+export default CarrouselCard;

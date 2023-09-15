@@ -4,5 +4,11 @@
 
 body{
     background-color: whitesmoke;
-}
+} 
 
+progress::-webkit-progress-value { background: #5316B6; border-radius: 10px; }
+
+progress::-webkit-progress-bar {
+    border-radius: 10px;
+    background-color: white;
+  }
