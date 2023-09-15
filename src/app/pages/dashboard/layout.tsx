@@ -11,6 +11,7 @@ import BooksIcon from "@/app/icons/BooksIcon";
 import BookIcon from "@/app/icons/BookIcon";
 import Profile from "@/app/icons/Profile";
 import Link from "next/link";
+import CoursesIcon from "@/app/icons/CoursesIcon";
 
 const DashboradLayout = ({ children }: { children: React.ReactNode }) => {
     return (
@@ -19,9 +20,9 @@ const DashboradLayout = ({ children }: { children: React.ReactNode }) => {
                 <div className="absolute top-20">
                     <LearnWithMe />
                 </div>
-                <SidebarOption icon={<HomeIcon isSelect={true} />} title="Home" isSelect={true} />
-                <SidebarOption icon={<BooksIcon isSelect={false} />} title="Ruta LWM" isSelect={false} />
-                <SidebarOption icon={<HomeIcon isSelect={false} />} title="Mis Cursos" isSelect={false} />
+                <SidebarOption icon={<HomeIcon isSelect={true} />} title="Home" pathname="/pages/dashboard/sections/home" />
+                <SidebarOption icon={<BooksIcon isSelect={false} />} title="Ruta LWM" pathname="/pages/dashboard/sections/ruta" />
+                <SidebarOption icon={<CoursesIcon isSelect={false} />} title="Mis Cursos" pathname="/pages/dashboard/sections/courses" />
                 <Link href='/pages/aboutus' className="absolute bottom-20 text-xl text-white border-b-2">
                     Sobre nosotros
                 </Link>
