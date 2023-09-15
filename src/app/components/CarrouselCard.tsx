@@ -1,8 +1,20 @@
 import Image from "next/image";
 import "tailwindcss/tailwind.css";
 import "daisyui/dist/full.css";
+import Link from "next/link";
+interface CarrouselCard {
+  source: string;
+  tittle: string;
+  children: string;
+  itemNum: number;
+}
 
-export default function CarrouselCard({ source, tittle, children, itemNum }: any) {
+const CarrouselCard: React.FC<CarrouselCard> = ({
+  source,
+  tittle,
+  children,
+  itemNum
+}) => {
   const numItem = `item${itemNum}`;
 
   const styles = (num: number) => {
@@ -18,14 +30,14 @@ export default function CarrouselCard({ source, tittle, children, itemNum }: any
   return (
     <div
       id={numItem}
-      className="carousel-item w-full flex justify-center gap-20 max-lg:flex-col items-center my-10"
+      className="carousel-item w-full flex justify-center gap-32 max-lg:flex-col items-center my-10 max-2xl:gap-8 "
     >
       <Image
         alt="coming-soon"
         src={source}
         width={800}
         height={400}
-        className="w-[1000px] max-2xl:w-[500px] max-sm:w-[300px] h-auto"
+        className="w-[1000px] max-2xl:w-[400px] max-sm:w-[200px]"
       />
       <div className="flex flex-col align-center justify-center">
         <div className="w-96 flex flex-col max-sm:w-80">
@@ -43,7 +55,7 @@ export default function CarrouselCard({ source, tittle, children, itemNum }: any
           <a href="#item3" className={styles(3)}></a>
         </div>
         <div className="flex justify-between mt-10 max-2xl:mt-4 max-sm:justify-around">
-          <button className=" text-white py-1 px-7 rounded-lg">Saltar</button>
+          <Link href='/pages/introtest' className=" text-white py-1 px-7 rounded-lg">Saltar</Link>
           <a
             href={goTo}
             className="bg-[#272727] text-white py-1 px-7 rounded-lg max-sm:bg-transparent max-sm:border-2 max-sm:py-3 max-sm:rounded-2xl"
@@ -55,3 +67,5 @@ export default function CarrouselCard({ source, tittle, children, itemNum }: any
     </div>
   );
 }
+
+export default CarrouselCard;
