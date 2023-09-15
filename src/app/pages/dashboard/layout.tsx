@@ -10,21 +10,24 @@ import HomeIcon from "@/app/icons/HomeIcon";
 import BooksIcon from "@/app/icons/BooksIcon";
 import BookIcon from "@/app/icons/BookIcon";
 import Profile from "@/app/icons/Profile";
+import Link from "next/link";
 
 const DashboradLayout = ({ children }: { children: React.ReactNode }) => {
     return (
-        <div className="w-full flex relative">
-            <div className="w-72 h-screen relative flex flex-col gap-9 justify-center items-center bg-[#5316B6]">
+        <div className="h-screen flex relative overflow-hidden">
+            <div className="w-72 z-10 h-screen flex flex-col gap-9 justify-center items-center bg-[#5316B6]">
                 <div className="absolute top-20">
                     <LearnWithMe />
                 </div>
                 <SidebarOption icon={<HomeIcon isSelect={true} />} title="Home" isSelect={true} />
-                <SidebarOption icon={<BooksIcon isSelect={false} />} title="Ruta" isSelect={false} />
-                <SidebarOption icon={<BookIcon isSelect={false} />} title="Cursos" isSelect={false} />
-                <SidebarOption icon={<Profile isSelect={false} />} title="Perfil" isSelect={false} />
+                <SidebarOption icon={<BooksIcon isSelect={false} />} title="Ruta LWM" isSelect={false} />
+                <SidebarOption icon={<HomeIcon isSelect={false} />} title="Mis Cursos" isSelect={false} />
+                <Link href='/pages/aboutus' className="absolute bottom-20 text-xl text-white border-b-2">
+                    Sobre nosotros
+                </Link>
             </div>
             <div className="flex flex-col w-full">
-                <nav className="h-20 w-full flex justify-between px-5 items-center bg-[#FFFFFF]">
+                <nav className="h-20 w-full  flex  justify-between px-5 items-center bg-[#FFFFFF]">
                     <h2 className="text-3xl font-semibold">Dashboard</h2>
                     <div className="flex bg-[#F2F2F7] rounded-3xl  px-4">
                         <InputSearch />
@@ -36,7 +39,9 @@ const DashboradLayout = ({ children }: { children: React.ReactNode }) => {
                         <UserProfile />
                     </div>
                 </nav>
-                {children}
+                <div className="overflow-y-auto">
+                    {children}
+                </div>
             </div>
         </div>
     );
