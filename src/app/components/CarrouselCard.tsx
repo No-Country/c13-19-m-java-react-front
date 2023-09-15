@@ -1,8 +1,7 @@
 import Image from "next/image";
 import "tailwindcss/tailwind.css";
 import "daisyui/dist/full.css";
-
-<<<<<<< Updated upstream
+import Link from "next/link";
 interface CarrouselCard {
   source: string;
   tittle: string;
@@ -16,9 +15,6 @@ const CarrouselCard: React.FC<CarrouselCard> = ({
   children,
   itemNum
 }) => {
-=======
-export default function CarrouselCard({ source, tittle, children, itemNum }: any) {
->>>>>>> Stashed changes
   const numItem = `item${itemNum}`;
 
   const styles = (num: number) => {
@@ -59,7 +55,7 @@ export default function CarrouselCard({ source, tittle, children, itemNum }: any
           <a href="#item3" className={styles(3)}></a>
         </div>
         <div className="flex justify-between mt-10 max-2xl:mt-4 max-sm:justify-around">
-          <button className=" text-white py-1 px-7 rounded-lg">Saltar</button>
+          <Link href='/pages/introtest' className=" text-white py-1 px-7 rounded-lg">Saltar</Link>
           <a
             href={goTo}
             className="bg-[#272727] text-white py-1 px-7 rounded-lg max-sm:bg-transparent max-sm:border-2 max-sm:py-3 max-sm:rounded-2xl"

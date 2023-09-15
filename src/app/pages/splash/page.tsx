@@ -12,7 +12,7 @@ export default function Splash() {
     // Establecer un temporizador para redirigir después de 5 segundos (5000 milisegundos)
     const redirectTimer = setTimeout(() => {
       // Redirigir a la página deseada después de 5 segundos
-      window.location.href = "/pages/login";
+      window.location.href = "/pages/carrousel";
     }, 5000);
 
     // Limpieza del temporizador en caso de que el componente se desmonte antes de que se complete
