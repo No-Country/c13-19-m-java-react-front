@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RadialProgressBar = ({ progress }) => {
+const RadialProgressBar = ({ progress }: any) => {
   const outerCircleSize = 100; // Tamaño del círculo exterior
   const borderWidth = 10; // Grosor de la línea de progreso
 
