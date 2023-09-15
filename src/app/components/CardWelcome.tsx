@@ -29,7 +29,7 @@ const CardWelcome: React.FC<CardWelcome> = ({
 
   const RadialProgress = (
     <div
-      className="radial-progress"
+      className="radial-progress text-primary"
       style={{ "--value": porcentaje, "--size": "6rem", "--thickness": "1rem" }}
     >{`${porcentaje}%`}</div>
   );

@@ -38,10 +38,10 @@ const Page = () => {
           <CardPorcentaje porcentaje={80} />
         </div>
         <div className="row-span-2 gap-2">
-          <DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
-          <DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
-          <DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
-           <DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
+          <DeadlineContainer title={"css flex"} deadlineTime={"12-20 pm"} />
+          <DeadlineContainer title={"JavaScript Promise"} deadlineTime={"4-10 pm"} />
+          <DeadlineContainer title={"nextJS 13 routing"} deadlineTime={"11-12 pm"} />
+           <DeadlineContainer title={"HTML tags"} deadlineTime={"12-20 pm"} />
           {/*<DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
           <DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
           <DeadlineContainer title={"holi"} deadlineTime={"12-20"} /> */}
@@ -51,18 +51,18 @@ const Page = () => {
         <div className="col-span-3 flex space-x-4">
           <CardCourses
             imageSrc={"/images/curso.svg"}
-            title="Título del Curso"
-            subtitle="Descripción breve del curso"
+            title="Desarrollo web"
+            subtitle="Desarrollo de paginas web con HTML"
           />
           <CardCourses
             imageSrc={"/images/curso.svg"}
-            title="Título del Curso"
-            subtitle="Descripción breve del curso"
+            title="CSS Flex y Grid"
+            subtitle="Desarrollo de web responsive con css flex"
           />
           <CardCourses
             imageSrc={"/images/curso.svg"}
-            title="Título del Curso"
-            subtitle="Descripción breve del curso"
+            title="nextJS 13"
+            subtitle="Desarrollo de paginas web con nextJS13"
           />
         </div>
       </div>
