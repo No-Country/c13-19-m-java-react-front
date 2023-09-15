@@ -33,7 +33,7 @@ const CardCtainerProgress: React.FC<CardCtainerProgress> = ({
     "w-[170px] max-sm:hidden max-sm:gap-1 max-md:gap-2 md:w-[180px] lg:w-[190px]";
   const containerClasses = `flex ${
     direction === "vertical" ? "flex-col" : "flex-row"
-  } items-center justify-center gap-5 p-15 border rounded-xl shadow w-[360px] ${
+  } items-center justify-evenly gap-5 p-15 border rounded-xl shadow w-[360px] ${
     width >= 350 ? widthBig : widthSmall
   } border-none bg-[#B993FF]`; // Cambia el ancho a 150px en pantallas pequeñas
   const titleClasses = "mb-2 font-bold text-xl font-";

@@ -19,10 +19,10 @@ const Page = () => {
 
   return (
     <>
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-4 gap-2 px-3 pt-3 pb-7">
         <div className="col-span-3">
           <CardWelcome
-            fullName="Jesus Ronquillo"
+            fullName="Rafael Diaz"
             cursoCercaDeTerminar="React.js"
             proximaClase="Jueves 13"
             porcentaje={50}
@@ -37,30 +37,30 @@ const Page = () => {
         <div>
           <CardPorcentaje porcentaje={80} />
         </div>
-        <div className="row-span-2">
+        <div className="row-span-2 gap-2">
           <DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
           <DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
           <DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
+           <DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
+          {/*<DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
           <DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
-          <DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
-          <DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
-          <DeadlineContainer title={"holi"} deadlineTime={"12-20"} />
+          <DeadlineContainer title={"holi"} deadlineTime={"12-20"} /> */}
           {/* <DeadlineContainer title={"holi"} deadlineTime={"12-20"} /> */}
         </div>
 
         <div className="col-span-3 flex space-x-4">
           <CardCourses
-            imageSrc={image}
+            imageSrc={"/images/curso.svg"}
             title="Título del Curso"
             subtitle="Descripción breve del curso"
           />
           <CardCourses
-            imageSrc={image}
+            imageSrc={"/images/curso.svg"}
             title="Título del Curso"
             subtitle="Descripción breve del curso"
           />
           <CardCourses
-            imageSrc={image}
+            imageSrc={"/images/curso.svg"}
             title="Título del Curso"
             subtitle="Descripción breve del curso"
           />
