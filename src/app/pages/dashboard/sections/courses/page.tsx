@@ -67,37 +67,37 @@ const CoursesPage = () => {
                     <h2>Todos los cursos / Mis cursos</h2>
                     <div className="w-full flex mt-5 justify-start items-center gap-10 flex-wrap">
                         <CardCourse
-                            image="../../../../../../images/developer.png"
+                            image="/images/developer.png"
                             title="Desarrollo web"
                             subtitle="Frontend"
                             porcentage={10}
                         />
                         <CardCourse
-                            image="../../../../../../images/scrum.png"
+                            image="/images/scrum.png"
                             title="ReactJS"
                             subtitle="Frontend"
                             porcentage={10}
                         />
                         <CardCourse
-                            image="../../../../../../images/developer.png"
+                            image="/images/developer.png"
                             title="JavaScript"
                             subtitle="Frontend"
                             porcentage={67}
                         />
                         <CardCourse
-                            image="../../../../../../images/developer.png"
+                            image="/images/developer.png"
                             title="Python"
                             subtitle="Frontend"
                             porcentage={0}
                         />
                         <CardCourse
-                            image="../../../../../../images/scrum.png"
+                            image="/images/scrum.png"
                             title="UI Desing"
                             subtitle="Diseño"
                             porcentage={100}
                         />
                         <CardCourse
-                            image="../../../../../../images/developer.png"
+                            image="/images/developer.png"
                             title="Scrum"
                             subtitle="Metodologías"
                             porcentage={30}
