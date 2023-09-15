@@ -1,11 +1,8 @@
 import Image from "next/image";
 import "tailwindcss/tailwind.css";
 import "daisyui/dist/full.css";
-<<<<<<< HEAD
-
-function CarrouselCard({ source, tittle, children, itemNum }: any) {
-=======
 import Link from "next/link";
+
 interface CarrouselCard {
   source: string;
   tittle: string;
@@ -19,7 +16,6 @@ const CarrouselCard: React.FC<CarrouselCard> = ({
   children,
   itemNum
 }) => {
->>>>>>> 3c14860462f3eb2679c60c92182f9ecac95cd1d2
   const numItem = `item${itemNum}`;
 
   const styles = (num: number) => {
