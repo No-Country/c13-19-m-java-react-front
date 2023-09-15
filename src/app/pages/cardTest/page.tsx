@@ -6,6 +6,7 @@ import CardCtainerProgress from "@/app/components/CardCtainerProgress";
 import Radial from "@/app/components/Radial";
 import CardWelcome from "@/app/components/CardWelcome";
 import CardPorcentaje from "@/app/components/CardPorcentaje";
+import CardWelcomeStatic from "@/app/components/CardWelcomeStatic";
 
 export default function CardTest() {
 
@@ -32,7 +33,7 @@ export default function CardTest() {
 
     return (
         <div>
-            <CardCtainerProgress 
+            {/* <CardCtainerProgress 
                 title={ `¡Buen dia, ${name}!` } 
                 subtitle={`Estas por terminar tu curso ${cursoPorTerminar}` } 
                 direction={"horizontal"} 
@@ -40,10 +41,11 @@ export default function CardTest() {
                 iconOrImg={ImageGood} 
                 reactElement={porcentaje} 
                 text="Tu proxima clase Jueves 12 de Marzo"
-                width={400}></CardCtainerProgress>
+                width={400}></CardCtainerProgress> */}
                 
-                <CardPorcentaje porcentaje={80}></CardPorcentaje>
-                <CardWelcome fullName={"Eitan Sanarbia"} cursoCercaDeTerminar={"asdas"} proximaClase={"asdasd"} porcentaje={0}></CardWelcome>
+                {/* <CardPorcentaje porcentaje={80}></CardPorcentaje> */}
+                {/* <CardWelcome fullName={"Eitan Sanarbia"} cursoCercaDeTerminar={"asdas"} proximaClase={"asdasd"} porcentaje={0}></CardWelcome> */}
+                <CardWelcomeStatic fullName={"Eitan Sanarbia"}></CardWelcomeStatic>
         </div>
                 
 

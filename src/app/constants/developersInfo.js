@@ -18,7 +18,7 @@ export const developers = [
     {name: "Ignacio Varela",
     subTittle: "Java Developer",
     description: "Desarrollador Java con experiencia trabajando en Springboot, JPA, MySQL, Javascript y React.",
-    imageSource: "/images/UserImageTest.jpg",
+    imageSource: "/images/nacho.jpeg",
     githubLink: "https://github.com/nachova1",
     linkedinLink: "https://www.linkedin.com/in/ignacio-varela-63852a256/"
     },
@@ -42,7 +42,7 @@ export const developers = [
     {name: "Eitan Sanabria",
     subTittle: "Frontend Developer",
     description: "Técnico en Programación con experiencia en React, JS, React Native y conocimientos en C#, .Net, C y Java, entre otras tecnologías.",
-    imageSource: "/images/UserImageTest.jpg",
+    imageSource: "/images/eitan.jpeg",
     githubLink: "https://github.com/eitan230",
     linkedinLink: "https://www.linkedin.com/in/eitan-sanabria-yberbuden-3b1a16237"
     },
@@ -55,7 +55,7 @@ export const developers = [
     linkedinLink: "https://www.linkedin.com/in/jesus-rafael-ronquillo-mallea-116229208/"
     },
 
-    {name: "Nicolàs Guerrero",
+    {name: "Nicolás Guerrero",
     subTittle: "QA Automation",
     description: "Quality Assurance Specialist con experiencia en Automation. Con más de 8 años de experiencia, trabajó con Postman, Jira Qmetry y Jenkins entre otras.",
     imageSource: "/images/nicolas.jpg",
@@ -66,14 +66,14 @@ export const developers = [
     {name: "Emely Noelia Arteaga",
     subTittle: "UX/UI Designer",
     description: "Diseñadora UX/UI y Arquitecta con experiencia trabajando en proyectos digitales, realizó actividades de mentoring y tutorías en Coderhouse.",
-    imageSource: "/images/UserImageTest.jpg",
+    imageSource: "/images/emely.jpeg",
     githubLink: "",
     linkedinLink: "http://www.linkedin.com/in/emelynoeliaarteaga"
     },
     {name: "Florencia Bonduel",
     subTittle: "UX/UI Designer",
     description: "Diseñadora UX/UI con experiencia trabajando en Figma, asi como en docencia en Psicología.",
-    imageSource: "/images/UserImageTest.jpg",
+    imageSource: "/images/flor.jpeg",
     githubLink: "",
     linkedinLink: "https://www.linkedin.com/in/florencia-bonduel-5b2398226"
     },
